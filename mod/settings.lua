@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "string-setting",
-    name = "quick-start-boost",
+    name = "quick-start-boost-kit",
     order = "aa",
     setting_type = "startup",
     default_value = "alpha",
