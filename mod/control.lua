@@ -52,7 +52,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"copper-plate", 400},
 		{"iron-gear-wheel", 200},
 		{"electronic-circuit", 400},
-		{"fast-transport-belt", 1500},
+		{"fast-transport-belt", 2600},
 		{"fast-underground-belt", 150},
 		{"fast-splitter", 150},
 		{"electric-furnace", 100},
@@ -63,7 +63,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"stack-filter-inserter", 50},
 		{"steel-chest", 250},
 		{"electric-mining-drill", 150},
-		{"medium-electric-pole", 400},
+		{"medium-electric-pole", 200},
 		{"big-electric-pole", 100},
 		{"substation", 100},
 		{"boiler", 20},
@@ -72,9 +72,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"pipe-to-ground", 200},
 		{"pipe", 200},
 		{"construction-robot", 150},
-        {"stone-wall", 300},
-        {"gate", 50},
-        {"small-lamp", 50},
+        {"small-lamp", 100},
         {"deconstruction-planner", 1},
         {"repair-pack", 100},
         {"car", 1}
@@ -149,7 +147,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"copper-plate", 400},
 		{"iron-gear-wheel", 200},
 		{"electronic-circuit", 400},
-		{"fast-transport-belt", 1500},
+		{"fast-transport-belt", 2600},
 		{"fast-underground-belt", 150},
 		{"fast-splitter", 150},
 		{"electric-furnace", 100},
@@ -160,7 +158,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"stack-filter-inserter", 50},
 		{"steel-chest", 250},
 		{"electric-mining-drill", 150},
-		{"medium-electric-pole", 400},
+		{"medium-electric-pole", 200},
 		{"big-electric-pole", 100},
 		{"substation", 100},
 		{"boiler", 20},
@@ -169,9 +167,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"pipe-to-ground", 200},
 		{"pipe", 200},
 		{"construction-robot", 150},
-        {"stone-wall", 300},
-        {"gate", 50},
-        {"small-lamp", 50},
+        {"small-lamp", 100},
         {"deconstruction-planner", 1},
         {"repair-pack", 100},
         {"car", 1},
@@ -179,14 +175,8 @@ script.on_event(defines.events.on_player_created, function(event)
         {"advanced-circuit", 200},
         {"chemical-plant", 20},
         {"oil-refinery", 10},
+        {"pumpjack", 50},
         {"lab", 10},
-        {"rail", 300},
-        {"rail-chain-signal", 50},
-        {"rail-signal", 50},
-        {"train-stop", 10},
-        {"locomotive", 10},
-        {"cargo-wagon", 10},
-        {"fluid-wagon", 5}
     }
 
 	kits["bravo"]["armourItems"] = {
@@ -221,7 +211,12 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"worker-robots-storage-2"},
 		{"worker-robots-storage-3"},
 
-        {"circuit-network"}
+        {"circuit-network"},
+        {"logistics"},
+        {"logistics-2"},
+        {"automation"},
+        {"automation-2"},
+        {"optics"}
     }
 
     -- Omega kit: just the super basics

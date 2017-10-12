@@ -26,7 +26,7 @@ By default, on player creation (game start) you get:
 * Items:
   * A bunch of fast belts & inserters
   * Factories, furnaces and enough kit to set up a power station
-  * A handful of base resources (iron, copper, gears, green circuits)
+  * A handful of base resources (iron, copper, gears, green chips)
   * A car
 
 You should be able to set up a small base and get on your feet, but no additional research is granted.
@@ -35,11 +35,16 @@ You should be able to set up a small base and get on your feet, but no additiona
 Lazy? In addition to the above:
 
 * Research completed:
+  * Optics
   * Circuit networks
+  * Logistics 2
+  * Automation 2
+* Armour:
+  * 2x additional exoskeletons
 * Items:
   * Advanced circuits (red chips)
   * Oil-based factories & refineries
-  * Rail & trains
+  * Laboratories
 
 ### Omega Kit
 Hardcore? stick to basics. This kit has just a few basics to skip the first few hours only. No roboport. No fast bots.
