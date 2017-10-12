@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ -z "`which jq`" ]]; then
+    echo "You need 'jq' installed to build."
+    exit 1
+fi
+
 mod_name=`jq -r '.name' mod/info.json`
 mod_ver=`jq -r '.version' mod/info.json`
 
