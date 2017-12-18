@@ -478,8 +478,10 @@ script.on_event(defines.events.on_player_created, function(event)
 
         -- Factories
         createFullRow("assembling-machine-2", 2)
-        createFullRow("electric-mining-drill", 3)
-        createFullRow("electric-furnace", 3)
+        createFullRow("electric-mining-drill", 2)
+        createFullRow("electric-furnace", 2)
+        createFullRow("solar-panel", 1)
+        createFullRow("accumulator", 1)
 
         createRow("fast-splitter", 1, 5)
         createRow("fast-underground-belt", 1, 5)
@@ -494,7 +496,7 @@ script.on_event(defines.events.on_player_created, function(event)
         createRow("concrete", 1, 1)
         createRow("hazard-concrete", 1, 1)
         createRow("stone-brick", 1, 1)
-        createRow("landfill", 1, 1)
+        createRow("radar", 1, 1)
         createRow("storage-tank", 1, 1)
         pos.x = pos.x - 10
         pos.y = pos.y + 1
