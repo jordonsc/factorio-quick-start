@@ -477,27 +477,25 @@ script.on_event(defines.events.on_player_created, function(event)
         pos.y = pos.y + 2
 
         -- Factories
-        createFullRow("assembling-machine-2", 2)
-        createFullRow("electric-mining-drill", 2)
-        createFullRow("electric-furnace", 2)
+        createFullRow("assembling-machine-2", 1)
+        createFullRow("electric-mining-drill", 1)
+        createFullRow("electric-furnace", 1)
         createFullRow("solar-panel", 1)
         createFullRow("accumulator", 1)
-
-        createRow("fast-splitter", 1, 5)
-        createRow("fast-underground-belt", 1, 5)
-        pos.x = pos.x - 10
-        pos.y = pos.y + 1
+        createFullRow("fast-splitter", 1)
+        createFullRow("fast-underground-belt", 1)
+        createFullRow("concrete", 1)
+        createFullRow("hazard-concrete", 1)
 
         createRow("oil-refinery", 1, 1)
-        createRow("pumpjack", 1, 1)
+        createRow("pumpjack", 1, 2)
         createRow("chemical-plant", 1, 1)
         createRow("boiler", 1, 1)
         createRow("steam-engine", 1, 1)
-        createRow("concrete", 1, 1)
-        createRow("hazard-concrete", 1, 1)
         createRow("stone-brick", 1, 1)
         createRow("radar", 1, 1)
         createRow("storage-tank", 1, 1)
+        createRow("engine-unit", 1, 1)
         pos.x = pos.x - 10
         pos.y = pos.y + 1
 
@@ -550,10 +548,11 @@ script.on_event(defines.events.on_player_created, function(event)
         createFullRow("electronic-circuit", 2)
         createFullRow("advanced-circuit", 1)
         createFullRow("speed-module", 1)
-        createFullRow("iron-plate", 2)
+        createFullRow("iron-plate", 1)
         createFullRow("iron-gear-wheel", 1)
         createFullRow("copper-plate", 1)
         createFullRow("copper-cable", 1)
+        createFullRow("landfill", 1)
         createRow("battery", 1, 1)
         createRow("plastic-bar", 1, 1)
         createRow("constant-combinator", 1, 1)
