@@ -1,11 +1,11 @@
 {
   "name": "quick-start-boost",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Quick Start Booster",
   "author": "Jordon (original: Pasukaru)",
   "contact": "",
   "homepage": "",
-  "factorio_version": "0.15",
-  "dependencies": ["base >= 0.15"],
-  "description": "Designed to remove the tedious elements of the early game when starting anew, this mod gives you a few items to get you moving quickly."
+  "factorio_version": "0.16",
+  "dependencies": ["base >= 0.16"],
+  "description": "Designed to remove the tedious elements of the early game when starting anew, this mod gives you a few (or a lot of) items to get you moving quickly."
 }

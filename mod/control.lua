@@ -42,7 +42,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{17, "big-electric-pole"},
 		{18, "substation"},
 		{19, "car"},
-		{20, "repair-pack"}
+		{20, "repair-pack"},
 	}
 
 	kits["alpha"]["items"] = {
@@ -75,7 +75,7 @@ script.on_event(defines.events.on_player_created, function(event)
         {"small-lamp", 100},
         {"deconstruction-planner", 1},
         {"repair-pack", 100},
-        {"car", 1}
+        {"car", 1},
     }
 
 	kits["alpha"]["armourItems"] = {
@@ -86,7 +86,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"battery-mk2-equipment"},
 		{"battery-mk2-equipment"},
 		{"exoskeleton-equipment"},
-		{"exoskeleton-equipment"}
+		{"exoskeleton-equipment"},
     }
 
     kits["alpha"]["technologies"] = {
@@ -106,7 +106,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"worker-robots-speed-6"},
 		{"worker-robots-storage-1"},
 		{"worker-robots-storage-2"},
-		{"worker-robots-storage-3"}
+		{"worker-robots-storage-3"},
     }
 
     -- Bravo kit: you lazy bastard.
@@ -137,7 +137,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{17, "big-electric-pole"},
 		{18, "substation"},
 		{19, "car"},
-		{20, "repair-pack"}
+		{20, "repair-pack"},
 	}
 
 	kits["bravo"]["items"] = {
@@ -189,7 +189,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"exoskeleton-equipment"},
 		{"exoskeleton-equipment"},
 		{"exoskeleton-equipment"},
-		{"exoskeleton-equipment"}
+		{"exoskeleton-equipment"},
     }
 
     kits["bravo"]["technologies"] = {
@@ -216,8 +216,131 @@ script.on_event(defines.events.on_player_created, function(event)
         {"logistics-2"},
         {"automation"},
         {"automation-2"},
-        {"optics"}
+        {"optics"},
     }
+
+
+    -- Charlie kit: designed for quickly rebuilding after upgrading Factorio versions
+    kits["charlie"] = {}
+
+	kits["charlie"]["armourType"] = "power-armor-mk2"
+
+	kits["charlie"]["quickbar"] = {
+		{1, "fast-transport-belt"},
+		{2, "fast-underground-belt"},
+		{3, "fast-splitter"},
+		{4, "fast-inserter"},
+		{5, "long-handed-inserter"},
+
+		{6, "stone-wall"},
+		{7, "gate"},
+		{8, "small-lamp"},
+		{9, "steel-chest"},
+		{10, "deconstruction-planner"},
+
+		{11, "rail"},
+        {12, "rail-signal"},
+        {13, "rail-chain-signal"},
+		{14, "filter-inserter"},
+		{15, "stack-filter-inserter"},
+
+		{16, "medium-electric-pole"},
+		{17, "big-electric-pole"},
+		{18, "substation"},
+		{19, "car"},
+		{20, "repair-pack"},
+	}
+
+	kits["charlie"]["items"] = {
+		{kits["charlie"]["armourType"], 1},
+		{"steel-axe", 10},
+		{"iron-plate", 492},
+		{"copper-plate", 400},
+		{"iron-gear-wheel", 200},
+		{"electronic-circuit", 400},
+		{"fast-transport-belt", 2600},
+		{"fast-underground-belt", 150},
+		{"fast-splitter", 150},
+		{"electric-furnace", 100},
+		{"assembling-machine-2", 100},
+		{"fast-inserter", 300},
+		{"long-handed-inserter", 150},
+		{"filter-inserter", 50},
+		{"stack-filter-inserter", 50},
+		{"steel-chest", 200},
+		{"electric-mining-drill", 150},
+		{"medium-electric-pole", 150},
+		{"big-electric-pole", 100},
+		{"substation", 100},
+		{"boiler", 20},
+		{"steam-engine", 40},
+		{"offshore-pump", 10},
+		{"pipe-to-ground", 200},
+		{"pipe", 200},
+		{"construction-robot", 150},
+        {"small-lamp", 100},
+        {"deconstruction-planner", 1},
+        {"repair-pack", 100},
+        {"car", 1},
+
+        {"advanced-circuit", 200},
+        {"chemical-plant", 20},
+        {"oil-refinery", 10},
+        {"pumpjack", 60},
+        {"lab", 10},
+
+        {"stone-wall", 100},
+        {"gate", 50},
+        {"rail-signal", 50},
+        {"rail-chain-signal", 50},
+    }
+
+	kits["charlie"]["armourItems"] = {
+		{"fusion-reactor-equipment"},
+		{"fusion-reactor-equipment"},
+		{"personal-roboport-mk2-equipment"},
+		{"personal-roboport-mk2-equipment"},
+		{"battery-mk2-equipment"},
+		{"battery-mk2-equipment"},
+		{"exoskeleton-equipment"},
+		{"exoskeleton-equipment"},
+		{"exoskeleton-equipment"},
+		{"exoskeleton-equipment"},
+		{"night-vision-equipment"},
+		{"personal-laser-defense-equipment"},
+		{"personal-laser-defense-equipment"},
+		{"personal-laser-defense-equipment"},
+		{"personal-laser-defense-equipment"},
+		{"personal-laser-defense-equipment"},
+    }
+
+    kits["charlie"]["technologies"] = {
+        {"toolbelt"},
+        {"character-logistic-slots-1"},
+        {"character-logistic-slots-2"},
+        {"character-logistic-slots-3"},
+        {"character-logistic-slots-4"},
+        {"character-logistic-slots-5"},
+        {"character-logistic-slots-6"},
+        {"auto-character-logistic-trash-slots"},
+		{"worker-robots-speed-1"},
+		{"worker-robots-speed-2"},
+		{"worker-robots-speed-3"},
+		{"worker-robots-speed-4"},
+		{"worker-robots-speed-5"},
+		{"worker-robots-speed-6"},
+		{"worker-robots-storage-1"},
+		{"worker-robots-storage-2"},
+		{"worker-robots-storage-3"},
+
+        {"circuit-network"},
+        {"logistics"},
+        {"logistics-2"},
+        {"automation"},
+        {"automation-2"},
+        {"optics"},
+    }
+
 
     -- Omega kit: just the super basics
     kits["omega"] = {}
@@ -227,7 +350,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{2, "underground-belt"},
 		{3, "splitter"},
 		{4, "inserter"},
-		{10, "deconstruction-planner"}
+		{10, "deconstruction-planner"},
 	}
 
 	kits["omega"]["items"] = {
@@ -248,7 +371,7 @@ script.on_event(defines.events.on_player_created, function(event)
 		{"offshore-pump", 10},
 		{"pipe-to-ground", 100},
 		{"pipe", 100},
-        {"deconstruction-planner", 1}
+        {"deconstruction-planner", 1},
     }
 
     -- end kits
@@ -304,5 +427,143 @@ script.on_event(defines.events.on_player_created, function(event)
 			end
 		end
 	end
+
+    -- Place some chests
+    if kitSetting == "charlie" then
+        local pos = player.position
+        local max = 10000
+
+        function createRow(item, rows, cols)
+            for y=1,rows do
+                for x=1,cols do
+                    pos.x = pos.x + 1
+                    local chest = player.surface.create_entity{name="logistic-chest-passive-provider", position=pos, force=player.force}
+                    chest.insert{name = item, count = max}
+                end
+
+                if cols == 10 then
+                    pos.x = pos.x - 10
+                    pos.y = pos.y + 1
+                end
+            end
+        end
+
+        function createFullRow(item, rows)
+            createRow(item, rows, 10)
+        end
+
+        -- Drop some roboports to stop the annoying notification
+        local robopos = player.position
+        robopos.x = robopos.x - 2
+        robopos.y = robopos.y + 16
+        player.surface.create_entity{name="roboport", position=robopos, force=player.force}
+        robopos.x = robopos.x + 38
+        player.surface.create_entity{name="roboport", position=robopos, force=player.force}
+
+
+        -- COLUMN 1
+
+        -- Red belts
+        createFullRow("fast-transport-belt", 10)
+        pos.y = pos.y + 1
+
+        -- Inserters
+        createFullRow("fast-inserter", 5)
+        createFullRow("stack-inserter", 3)
+        createFullRow("long-handed-inserter", 1)
+        createRow("stack-filter-inserter", 1, 5)
+        createRow("filter-inserter", 1, 5)
+        pos.x = pos.x - 10
+        pos.y = pos.y + 2
+
+        -- Factories
+        createFullRow("assembling-machine-2", 2)
+        createFullRow("electric-mining-drill", 3)
+        createFullRow("electric-furnace", 3)
+
+        createRow("fast-splitter", 1, 5)
+        createRow("fast-underground-belt", 1, 5)
+        pos.x = pos.x - 10
+        pos.y = pos.y + 1
+
+        createRow("oil-refinery", 1, 1)
+        createRow("pumpjack", 1, 1)
+        createRow("chemical-plant", 1, 1)
+        createRow("boiler", 1, 1)
+        createRow("steam-engine", 1, 1)
+        createRow("concrete", 1, 1)
+        createRow("hazard-concrete", 1, 1)
+        createRow("stone-brick", 1, 1)
+        createRow("landfill", 1, 1)
+        createRow("storage-tank", 1, 1)
+        pos.x = pos.x - 10
+        pos.y = pos.y + 1
+
+
+        -- COLUMN 2
+        pos.x = pos.x + 11
+        pos.y = pos.y - 32
+
+        -- Rail
+        createFullRow("rail", 7)
+        createFullRow("rail-signal", 2)
+        createFullRow("rail-chain-signal", 1)
+        pos.y = pos.y + 1
+
+        -- Power Poles, Misc
+        createFullRow("steel-chest", 3)
+        createFullRow("small-lamp", 1)
+        createFullRow("medium-electric-pole", 2)
+        createFullRow("big-electric-pole", 2)
+        createFullRow("substation", 2)
+        pos.y = pos.y + 1
+
+        -- Walls
+        createFullRow("stone-wall", 8)
+        createFullRow("gate", 2)
+
+
+        -- COLUMN 3
+        pos.x = pos.x + 11
+        pos.y = pos.y - 32
+
+        -- Defence
+        createFullRow("laser-turret", 4)
+        createFullRow("flamethrower-turret", 4)
+        createFullRow("pipe", 1)
+        createFullRow("pipe-to-ground", 1)
+        pos.y = pos.y + 1
+
+        -- Trains, robots
+        createFullRow("locomotive", 1)
+        createFullRow("cargo-wagon", 4)
+        createFullRow("fluid-wagon", 1)
+        createFullRow("train-stop", 1)
+        createFullRow("roboport", 1)
+        createFullRow("construction-robot", 1)
+        createFullRow("logistic-robot", 1)
+        pos.y = pos.y + 1
+
+        -- Resources
+        createFullRow("electronic-circuit", 2)
+        createFullRow("advanced-circuit", 1)
+        createFullRow("speed-module", 1)
+        createFullRow("iron-plate", 2)
+        createFullRow("iron-gear-wheel", 1)
+        createFullRow("copper-plate", 1)
+        createFullRow("copper-cable", 1)
+        createRow("battery", 1, 1)
+        createRow("plastic-bar", 1, 1)
+        createRow("constant-combinator", 1, 1)
+        createRow("decider-combinator", 1, 1)
+        createRow("arithmetic-combinator", 1, 1)
+        createRow("steam-turbine", 1, 1)
+        createRow("heat-exchanger", 1, 1)
+        createRow("heat-pipe", 1, 1)
+        createRow("logistic-chest-storage", 1, 1)
+        createRow("logistic-chest-passive-provider", 1, 1)
+
+
+    end
 	
 end)

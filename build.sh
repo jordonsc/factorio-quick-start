@@ -14,7 +14,7 @@ cwd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd ${cwd}
 
 rm -rf build/${mod_name}_${mod_ver}
-rm -rf build/${mod_name}_${mod_ver}.zip
+rm -f build/${mod_name}_${mod_ver}.zip
 
 mkdir build/${mod_name}_${mod_ver}
 cp -r mod/* build/${mod_name}_${mod_ver}

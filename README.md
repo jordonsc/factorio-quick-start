@@ -7,6 +7,9 @@ manually constructing a base with burner inserters.
 
 You gain the annoying/tedious things that take time to rebuild, while keeping the essence of the game in-tact.
 
+Added with the release of Factorio 0.16, a kit that drops a plethora of chests full of enough gear to quickly rebuild a
+mid-game base without the need of a starter base.
+
 Kits
 ----
 ### Alpha Kit
@@ -46,8 +49,25 @@ Lazy? In addition to the above:
   * Oil-based factories & refineries
   * Laboratories
 
+### Charlie Kit
+Got half way through the game and then a new version was released? This kit will take the Bravo kit but also drop a lot
+of chests (900 chests) next to your starting location full of enough gear to build a mid-game base.
+
+Also adds night vision and personal laser defense units to your armour.
+
+NB: The _Charlie Kit_ makes no regard for terrain, your starting chests might be floating on water or over trees.
+
+
 ### Omega Kit
 Hardcore? stick to basics. This kit has just a few basics to skip the first few hours only. No roboport. No fast bots.
+
+
+Installing
+----------
+Build the mod by running `./build.sh`, then copy the zip file created in `build/` to your mods directory in 
+`~/.factorio/mods` (Linux). On Linux, for your current user, you can run `./build.sh && ./install.sh` to quickly build
+and copy the mod.
+
 
 Credit
 ------

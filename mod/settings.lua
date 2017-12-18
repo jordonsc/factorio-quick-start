@@ -5,6 +5,6 @@ data:extend({
     order = "aa",
     setting_type = "startup",
     default_value = "alpha",
-    allowed_values =  {"alpha", "bravo", "omega"}
+    allowed_values =  {"alpha", "bravo", "charlie", "omega"}
   }
 })
