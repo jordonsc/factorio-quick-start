@@ -47,7 +47,6 @@ script.on_event(defines.events.on_player_created, function(event)
         {"submachine-gun", 1},
         {"piercing-rounds-magazine", 100},
 
-		{"steel-axe", 10},
 		{"iron-plate", 492},
         {"iron-gear-wheel", 200},
         {"copper-plate", 400},
@@ -121,6 +120,9 @@ script.on_event(defines.events.on_player_created, function(event)
 
     kit["technologies"] = {
         {"toolbelt"},
+        {"construction-robotics"},
+        {"personal-roboport-equipment"},
+        {"exoskeleton-equipment"},
         {"character-logistic-slots-1"},
         {"character-logistic-slots-2"},
         {"character-logistic-slots-3"},
@@ -148,23 +150,9 @@ script.on_event(defines.events.on_player_created, function(event)
 		end
 	end
 
-	-- Find quickbar (usually player_quickbar, but god_quickbar in sandbox mode)
-	local quickbar = player.get_inventory(defines.inventory.player_quickbar)
-	if quickbar ~= nil and not quickbar.can_set_filter(1, "transport-belt") then
-		quickbar = player.get_inventory(defines.inventory.god_quickbar)
-	end
-
-	-- Setup quickbar favorites
-	if quickbar ~= nil and quickbar.can_set_filter(1, "transport-belt") ~= nil then
-		quickbar.clear()
-		for k,v in pairs(kit["quickbar"]) do
-			quickbar.set_filter(v[1], v[2])
-		end
-	end
-
 	-- Add items
 	for k,v in pairs(kit["items"]) do
-		player.insert{name = v[1], count = v[2]}
+        c = player.insert{name = v[1], count = v[2]}
 	end
 
     -- Kit out armour
