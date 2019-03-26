@@ -16,32 +16,6 @@ script.on_event(defines.events.on_player_created, function(event)
 
 	kit["armourType"] = "power-armor-mk2"
 
-	kit["quickbar"] = {
-		{1, "fast-transport-belt"},
-		{2, "fast-underground-belt"},
-		{3, "fast-splitter"},
-		{4, "fast-inserter"},
-		{5, "long-handed-inserter"},
-
-		{6, "stone-wall"},
-		{7, "gate"},
-		{8, "small-lamp"},
-		{9, "steel-chest"},
-		{10, "deconstruction-planner"},
-
-		{11, "rail"},
-        {12, "rail-signal"},
-        {13, "rail-chain-signal"},
-		{14, "filter-inserter"},
-		{15, "stack-filter-inserter"},
-
-		{16, "medium-electric-pole"},
-		{17, "big-electric-pole"},
-		{18, "substation"},
-		{19, "car"},
-		{20, "repair-pack"},
-	}
-
 	kit["items"] = {
 		{ kit["armourType"], 1},
         {"submachine-gun", 1},
@@ -87,8 +61,8 @@ script.on_event(defines.events.on_player_created, function(event)
             {"iron-plate", 2000},
             {"iron-gear-wheel", 1000},
             {"copper-plate", 2000},
-            {"copper-cable", 2000},
             {"electronic-circuit", 2000},
+            {"advanced-circuit", 2000},
             {"rail", 1000},
         },
         {
@@ -96,14 +70,15 @@ script.on_event(defines.events.on_player_created, function(event)
             {"fast-underground-belt", 250},
             {"fast-splitter", 250},
             {"fast-inserter", 250},
-            {"long-handed-inserter", 250},
-            {"filter-inserter", 250},
+            {"stack-inserter", 250},
+            {"stack-filter-inserter", 50},
+            {"long-handed-inserter", 100},
             {"steel-chest", 250},
             {"small-lamp", 100},
-            {"medium-electric-pole", 300},
+            {"medium-electric-pole", 100},
             {"big-electric-pole", 300},
-            {"substation", 150},
-            {"stone-wall", 300},
+            {"substation", 350},
+            {"stone-wall", 500},
         },
     }
 
@@ -143,7 +118,7 @@ script.on_event(defines.events.on_player_created, function(event)
 
     -- end kits
 
-	-- Unlock technologies (must come before quickbar)
+	-- Unlock technologies
 	if kit["technologies"] ~= nil then
 		for k,v in pairs(kit["technologies"]) do
 			player.force.technologies[v[1]].researched = true
