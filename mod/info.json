@@ -1,11 +1,11 @@
 {
-  "name": "quick-start-boost",
-  "version": "2.0.1",
-  "title": "Quick Start Booster",
+  "name": "war-monger",
+  "version": "1.0.0",
+  "title": "War Monger",
   "author": "Jordon",
   "contact": "",
   "homepage": "",
   "factorio_version": "0.17",
   "dependencies": ["base >= 0.17"],
-  "description": "Designed to remove the tedious elements of the early game when starting anew, this mod gives you a few key items to get you moving quickly."
+  "description": "Make the aliens more aggressive, especially late game, and target more strategic resources."
 }
